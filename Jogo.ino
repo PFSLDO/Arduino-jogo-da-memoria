@@ -62,7 +62,7 @@ void setup() //Função inicial do sistema
   pinMode(3, INPUT);   //Define o pino digital associado ao pino DB5 do Display LCD como entrada
   show_init_message(); //Chama a função que coloca no Display LCD a mensagem inicial do jogo
   reset();             //Chama a função que reseta o jogo e inicia os comandos do jogo
-  delay(2000);         //Delei entre o final do jogo
+  delay(2000);         //Delei entre o final do jogo e o começo
 }
 
 void loop() //Função loop principal do sistema
@@ -110,7 +110,7 @@ void add_sequece() //Define a função que adiciona mais uma sequência de LEDs 
     {
       order[level] = (short)random(0, OPTIONS_COUNT); //Escolhe um LED aleatoriamente, conforme o número de LEDs determinados pela variável OPTIONS_COUNT
     }
-    level++; //Incremento na variável level para registrar o nível/fase em que o jogador se encontra
+    level++; //na variável level para registrar o nível/fase em que o jogador se encontra
   }
 }
 
